@@ -1,7 +1,7 @@
 import './App.css'
 import Box from './Box'
 import Post from './Post'
-
+import Heatgrid from './Heatgrid'
 
 type Task = {
   title: string
@@ -9,7 +9,7 @@ type Task = {
 }
 
 
-const tasks : Task[] = [
+const tasks: Task[] = [
   {
     title: "Vacuuming",
     description: "Vacuum carpets rugs etc."
@@ -24,18 +24,22 @@ const tasks : Task[] = [
 function App() {
 
   return (
-    <>
+    <div className='flex flex-col justify-center items-center'>
 
-    {
-      tasks.map((task) => {
-        return <Box title={task.title} description={task.description}/>
-      })
-    }
+      {
+        tasks.map((task) => {
+          return <Box title={task.title} description={task.description} />
+        })
+      }
 
-    <Post></Post>
+      <Post />
+      <br></br>
+      <Heatgrid />
 
-    </>
- 
+    </div>
+
+
+
   )
 }
 
