@@ -1,9 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import classNames from 'classnames'
 import Box from './Box'
+import Post from './Post'
 
 
 type Task = {
@@ -24,15 +21,10 @@ const tasks : Task[] = [
 ]
 
 
-
 function App() {
-
-
 
   return (
     <>
-
-    Hello
 
     {
       tasks.map((task) => {
@@ -40,6 +32,7 @@ function App() {
       })
     }
 
+    <Post></Post>
 
     </>
  

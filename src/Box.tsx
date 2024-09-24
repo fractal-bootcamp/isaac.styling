@@ -1,11 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import classNames from 'classnames'
-
-
-
 
 function Box({title, description} :{title: string, description: string}) {
 
@@ -14,7 +9,7 @@ function Box({title, description} :{title: string, description: string}) {
     const onCheck = () => {
         setChecked(!checked)
       }
-    
+
 
     const checkStyles = classNames('w-6 h-6 border rounded-md appearance-none', {
         'bg-green-400 border-green-800': checked,
